@@ -4,10 +4,55 @@
     <head>
         <meta charset="UTF-8">
         <title>Logan's Personal Website</title>
-        <link rel="stylesheet" type="text/css" href="./Building Your First Website/page1layout.css">
     </head>
 
     <body>
+        <style>
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+            margin-left: 40px;
+            margin-right: 40px;
+            overflow: hidden;
+        }
+
+        a:hover {
+            animation-duration: 0.2s;
+            animation-name: grow;
+        }
+
+        @keyframes grow {
+            from {
+                font-size: 1.5em;
+            }
+            to {
+                font-size: 1.7em;
+            }
+        }
+
+        body {
+            background-image: url("../My-First-Website/Background.png");
+            background-repeat: repeat;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: flex;
+            margin: auto;
+        }
+
+        .info {
+            margin-top: 40px;
+        }
+        </style>
+
         <div class = "intro">
             <h1>Introduction</h1>
         </div>
@@ -18,7 +63,8 @@
             <h2><a href = "../My-First-Website/page4.html">Page 4</a></h2>
         </div>
         <div class="main">
-        <img src = "https://media-exp1.licdn.com/dms/image/C4E03AQHCyLMJ8tkJ4w/profile-displayphoto-shrink_800_800/0/1650219503000?e=1665014400&v=beta&t=fBb_OQWtJ2M5xPw-89pBuCdT8vwsjXGFA6UfXcQqz0E" alt="Mugshot" height="300" width="300">
+
+            <img src = "https://media-exp1.licdn.com/dms/image/C4E03AQHCyLMJ8tkJ4w/profile-displayphoto-shrink_800_800/0/1650219503000?e=1665014400&v=beta&t=fBb_OQWtJ2M5xPw-89pBuCdT8vwsjXGFA6UfXcQqz0E" alt="Mugshot" height="300" width="300">
             <h2>Hey everybody, my name is Logan. I'm currently pursuing the self-paced coding bootcamp course through AppAcademy,
                 and this is a website that I designed from scratch using HTML and CSS.
             </h2>
@@ -28,6 +74,7 @@
 
             <h2>When I'm not coding or working, I can usually be found practicing the piano, working on my coding, or playing video games.
             </h2>
+
         </div>
 
         <div class="info">
@@ -36,16 +83,5 @@
                 <a href="https://github.com/LoganT1993">My GitHub account</a></p>
             </footer>
         </div>
-
-
-
-
-
     </body>
-
-
-
-
-
-
 </html>
