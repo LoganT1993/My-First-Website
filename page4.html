@@ -8,6 +8,36 @@
     </head>
 
     <body>
+        <style>
+            .navigation {
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: space-between;
+             margin-top: 25px;
+             margin-left: 40px;
+             margin-right: 40px;
+             overflow: hidden;
+         }
+
+         body {
+             background-image: url("../My-First-Website/Background.png");
+             background-repeat: repeat;
+         }
+
+         .pictures {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 5px;
+         }
+
+         img {
+            width: 450px;
+            height: 500px;
+         }
+         </style>
+
         <div class="navigation">
             <h2><a href = "../My-First-Website/page1.html">Page 1</a></h2>
             <h2><a href = "../My-First-Website/page2.html">Page 2</a></h2>
